@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="navbar">
+        <a href="/" class="nav-cart border"> <img src="images/img/amazon.logo.png" alt="Amazon logo">  </a>
+    
+        <div class="nav-items location border">
+            <p>Deliver to</p>
+            <div class="flex-row">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="nav-l">India</p>
+            </div>
+        </div>
+
+        <div class=" search-kit">
+            <select  name="category" id="category">
+                <option>All </option>
+                <option>Arts & Craft</option>
+                <option>Automotive</option>
+                <option>Baby</option>
+                <option>Beauty & Personal Care</option>
+                <option>Books</option>
+                <option>Boy's Fashion</option>
+                <option>Computers</option>
+                <option>Deals</option>
+                <option>Digital Music</option>
+                <option>Electronics</option>
+                <option>Girl's Fashion</option>
+                <option>Health & Household</option>
+                <option>Home & Kitchen</option>
+                <option>Inductrial & Scientific</option>
+                <option>Kindle Store</option>
+                <option>Luggage</option>
+                <option>Men's Fashion</option>
+                <option>Movies & TV</option>
+                <option>Music, CDs & Vinyl</option>
+                <option>Pet Supplies</option>
+                <option>Prime Video</option>
+                <option>Software</option>
+                <option>Sports & Outdoor</option>
+                <option>Tools & Home Improvement</option>
+                <option>Toys & Games</option>
+                <option>Video Games</option>
+                <option>Women's Fashion</option>
+            </select>
+            <input placeholder="Search Amazon">
+            <button class="Search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="language border">
+            <img src="https://flagsapi.com/US/flat/64.png">
+            <p class="nav-l b">EN</p>
+            <i class="fa-solid fa-caret-down nav-i-down"></i>
+        </div>
+
+        <div class="nav-items sign-in border">
+            <p class="nav-s">Hello, sign in</p>
+            <div>
+                <p class="nav-l b">Accounts & Lists</p>
+                <i class="fa-solid fa-caret-down nav-i-down"></i>
+            </div>
+        </div>
+
+        <div class="nav-items orders border">
+            <p class="nav-s">Returns</p>
+            <p class="nav-l b">& Orders</p>
+        </div>
+
+        <div class="nav-items nav-cart border">
+            <div class="cart-icon">
+                <p>0</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <p class="nav-l b">Cart</p>
+        </div>
+    </header>
+
+    <div class="nav2">
+        <div class="nav2-items menu border">
+            <i class="fa-solid fa-bars"></i>
+            <p>All</p>
+        </div>
+        <div class="nav2-items border">
+            <p>Today's Deals</p>
+        </div>
+        <div class="nav2-items border">
+            <p>Customer Service</p>
+        </div>
+        <div class="nav2-items border">
+            <p>Registry</p>
+        </div>
+        <div class="nav2-items border">
+            <p>Gift Card</p>
+        </div>
+        <div class="nav2-items border">
+            <p>Sell</p>
+        </div>
+    </div>
+
+    <!-- HERO SECTION... -->
+    <div class="bg-slider">
+        <img  class="bg" src="images/img/bg1.jpg" class="bg"> 
+        <button class="previous">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+    </div>
+    <div class="welcome">
+        <p>
+             You are on Amazon clone website. The look and the feel is all the same as the original website.
+            <a href="https://www.amazon.com/">click here to visit orignal Amazon website.</a>
+        </p>
+    </div>
+
+    <!-- BOX PRODUCTS.... -->
+    <div class="box-product">
+
+        <div class="product-box box4">
+            <div><p>Gaming accessories</p></div>
+            <div class="product-grid">
+                <div class="product4">
+                    <img src="/images/product/ga1.jpg" alt="headsets">
+                    <span>headsets</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/ga2.jpg" alt="keyboards">
+                    <span>keyboards</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/ga3.jpg" alt="Computer mice">
+                    <span>computer mice</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/ga4.jpg" alt="chairs">
+                    <span>chairs</span>
+                </div>
+            </div>
+            <a>see more</a>
+        </div>
+
+        <div class="product-box box1">
+            <p>Deals in PCs</p>
+            <img src="/images/product/pc.jpg" alt="desktop">
+            <a>Shop now</a>
+        </div>
+
+        <div class="product-box box4">
+            <div><p>Refresh your space</p></div>
+            <div class="product-grid">
+                <div class="product4">
+                    <img src="/images/product/kitchen.jpg" alt="kitchen products">
+                    <span>Kitchen</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/home.jpg" alt="home decor">
+                    <span>Home</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/gifts.jpg" alt="gift">
+                    <span>Gift ideas</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/beauty.jpg" alt="beauty product">
+                    <span>Health & Beauty</span>
+                </div>
+            </div>
+            <a>see more</a>
+        </div>
+
+        <div class="product-box box1">
+            <p>50% OFF on Dresses</p>
+            <img src="/images/product/dresses.jpg" alt="dresses">
+            <a>Shop now</a>
+        </div>
+        
+        <div class="product-box box1">
+            <p>Toys under $25</p>
+            <img src="/images/product/toys.jpg" alt="toys">
+            <a>Shop now</a>
+        </div>
+
+        <div class="product-box box4">
+            <div><p>Music & Audio</p></div>
+            <div class="product-grid">
+                <div class="product4">
+                    <img src="/images/product/music1.jpg" alt="headphone">
+                    <span>Headphones</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/music2.jpg" alt="a boy playing guitar">
+                    <span>Guitars</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/music3.jpg" alt="a casio">
+                    <span>keyboards</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/music4.jpg" alt="Microphone">
+                    <span>Microphones</span>
+                </div>
+            </div>
+            <a>see more</a>
+        </div>
+
+        <div class="product-box box4">
+            <div><p>Warm & welcoming decor</p></div>
+            <div class="product-grid">
+                <div class="product4">
+                    <img src="/images/product/decor1.jpg" alt="garland">
+                    <span>Garlands</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/decor2.jpg" alt="bed">
+                    <span>Outdoor decor</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/decor3.jpg" alt="pillows">
+                    <span>Pillow & throws</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/decor4.jpg" alt="mirror">
+                    <span>Mirrors</span>
+                </div>
+            </div>
+            <a>see more</a>
+        </div>
+
+        <div class="product-box box1">
+            <p>Laptop for every need</p>
+            <img src="/images/product/laptop.jpg" alt="woman using laptop">
+            <a>Shop now</a>
+        </div>
+    </div>
+    <!-- PRODUCT SLIDER 1.... -->
+    <div class="slider-box slider-box-books">
+        <p>Best Sellers in Books</p>
+        <div class="slider slider-books">
+            <button id="slider-prev-books" class="slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="slider-next-books" class="slider-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="product-list product-list-books">
+                <img src="images/product/b1.jpg" alt="book">
+                <img src="images/product/b2.jpg" alt="book">
+                <img src="images/product/b3.jpg" alt="book">
+                <img src="images/product/b4.jpg" alt="book">
+                <img src="images/product/b5.jpg" alt="book">
+                <img src="images/product/b6.jpg" alt="book">
+                <img src="images/product/b7.jpg" alt="book">
+                <img src="images/product/b8.jpg" alt="book">
+                <img src="images/product/b9.jpg" alt="book">
+                <img src="images/product/b10.jpg" alt="book">
+                <img src="images/product/b11.jpg" alt="book">
+                <img src="images/product/b12.jpg" alt="book">
+                <img src="images/product/b13.jpg" alt="book">
+                <img src="images/product/b14.jpg" alt="book">
+                <img src="images/product/b15.jpg" alt="book">
+                <img src="images/product/b16.jpg" alt="book">
+                <img src="images/product/b17.jpg" alt="book">
+                <img src="images/product/b18.jpg" alt="book">
+                <img src="images/product/b19.jpg" alt="book">
+                <img src="images/product/b20.jpg" alt="book">
+                <img src="images/product/b21.jpg" alt="book">
+                <img src="images/product/b22.jpg" alt="book">
+            </div>
+            <div class="scrollbar scrollbar-books">
+                <div class="thumb thumb-books"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SINGLE ROW OF PRODUCTS... -->
+    <div class="single-row">
+
+        <div class="product-box box1">
+            <p>Player's Paradise</p>
+            <img src="/images/product/player.jpg" alt="toys">
+            <a>Shop now</a>
+        </div>
+
+        <div class="product-box box1">
+            <p>Fill your Easter with joy</p>
+            <img src="/images/product/easter.jpg" alt="toys">
+            <a>Shop now</a>
+        </div>
+     
+        <div class="product-box box4">
+            <div><p>Fashion trends you may like</p></div>
+            <div class="product-grid">
+                <div class="product4">
+                    <img src="/images/product/fashion1.jpg" alt="dresses">
+                    <span>Dresses</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/fashion2.jpg" alt="Knits">
+                    <span>Knits</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/fashion3.jpg" alt="Jackets">
+                    <span>Jackets</span>
+                </div>
+                <div class="product4">
+                    <img src="/images/product/fashion4.jpg" alt="Jewelry">
+                    <span>Jewelry</span>
+                </div>
+            </div>
+            <a>see more</a>
+        </div>
+
+        <div class="product-box box1">
+            <p>Personal Care</p>
+            <img src="/images/product/personalcare.webp" alt="toys">
+            <a>Shop now</a>
+        </div>
+    </div>
+
+    <!-- PRODUCT SLIDER 2.... -->
+    
+    <div class="slider-box slider-box-sports">
+        <p>Gear up with these Outdoor accessories</p>
+        <div class="slider slider-sports">
+            <button id="slider-prev-sports" class="slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="slider-next-sports" class="slider-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="product-list product-list-sports">
+                <img src="images/product/s1.jpg" alt="sports equipment">
+                <img src="images/product/s2.jpg" alt="sports equipment">
+                <img src="images/product/s3.jpg" alt="sports equipment">
+                <img src="images/product/s4.jpg" alt="sports equipment">
+                <img src="images/product/s5.jpg" alt="sports equipment">
+                <img src="images/product/s6.jpg" alt="sports equipment">
+                <img src="images/product/s7.jpg" alt="sports equipment">
+                <img src="images/product/s8.jpg" alt="sports equipment">
+                <img src="images/product/s9.jpg" alt="sports equipment">
+                <img src="images/product/s10.jpg" alt="sports equipment">
+                <img src="images/product/s11.jpg" alt="sports equipment">
+                <img src="images/product/s12.jpg" alt="sports equipment">
+                <img src="images/product/s13.jpg" alt="sports equipment">
+                <img src="images/product/s14.jpg" alt="sports equipmentk">
+                <img src="images/product/s15.jpg" alt="sports equipment">
+                <img src="images/product/s16.jpg" alt="sports equipment">
+                <img src="images/product/s17.jpg" alt="sports equipment">
+                <img src="images/product/s18.jpg" alt="sports equipment">
+                <img src="images/product/s19.jpg" alt="sports equipment">
+                <img src="images/product/s20.jpg" alt="sports equipment">
+                <img src="images/product/s21.jpg" alt="sports equipment">
+                <img src="images/product/s22.jpg" alt="sports equipment">
+            </div>
+            <div class="scrollbar scrollbar-sports">
+                <div class="thumb thumb-sports"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT SLIDER 3.... -->
+    
+    <div class="slider-box slider-box-dress">
+        <p>Upgrade your Wardrobe</p>
+        <div class="slider slider-dress">
+            <button id="slider-prev-dress" class="slider-prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button id="slider-next-dress" class="slider-next"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="product-list product-list-dress">
+                <img src="images/product/d1.webp" alt="dress">
+                <img src="images/product/d2.webp" alt="dress">
+                <img src="images/product/d3.webp" alt="dress">
+                <img src="images/product/d4.webp" alt="dress">
+                <img src="images/product/d5.webp" alt="dress">
+                <img src="images/product/d6.webp" alt="dress">
+                <img src="images/product/d7.webp" alt="dress">
+                <img src="images/product/d8.webp" alt="dress">
+                <img src="images/product/d9.webp" alt="dress">
+                <img src="images/product/d10.webp" alt="dress">
+                <img src="images/product/d11.webp" alt="dress">
+                <img src="images/product/d12.webp" alt="dress">
+                <img src="images/product/d13.webp" alt="dress">
+                <img src="images/product/d14.jpg" alt="dress">
+                <img src="images/product/d15.jpg" alt="dress">
+                <img src="images/product/d16.webp" alt="dress">
+                <img src="images/product/d17.jpg" alt="dress">
+                <img src="images/product/d18.webp" alt="dress">
+                <img src="images/product/d19.webp" alt="dress">
+                <img src="images/product/d20.webp" alt="dress">
+                <img src="images/product/d21.webp" alt="dress">
+                <img src="images/product/d22.webp" alt="dress">
+                <img src="images/product/d23.webp" alt="dress">
+                <img src="images/product/d24.webp" alt="dress">
+                <img src="images/product/d25.webp" alt="dress">
+                <img src="images/product/d26.webp" alt="dress">
+                <img src="images/product/d27.webp" alt="dress">
+            </div>
+            <div class="scrollbar scrollbar-dress">
+                <div class="thumb thumb-dress"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- SIGN IN BUTTON AT THE BOTTOM OF THE PAGE BEFORE THE FOOTER... -->
+    <div class="login">
+        <p>See personalized recommendations</p>
+        <button class="login-btn b">Sign in</button>
+        <p class="xs-font">new customer? <a>Start here</a></p>
+    </div>
+
+    <!-- FOOTER... -->
+    <footer>
+        <div class="back-to-top">
+            <p>Back to Top</p>
+        </div>
+
+        <div class="footer1">
+            <div class="footer1-section">
+                <p><a>Get to Know Us</a></p>
+                <ul>
+                    <li><a>Career</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>About Amazon</a></li>
+                    <li><a>Investor Relations</a></li>
+                    <li><a>Amazon Devices</a></li>
+                    <li><a>Amazon Science</a></li>
+                </ul>
+            </div>
+
+            <div class="footer1-section">
+                <p>Make Money with Us</p>
+                <ul>
+                    <li><a>Sell products on Amazon</a></li>
+                    <li><a>Sell on Amazon Business</a></li>
+                    <li><a>Sell apps on Amazon</a></li>
+                    <li><a>Become an Affiliate</a></li>
+                    <li><a>Advertise Your Products</a></li>
+                    <li><a>Self-Publish with Us</a></li>
+                    <li><a>Host an Amazon Hub</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer1-section">
+                <p>Amazon Payment Products</p>
+                <ul>
+                    <li><a>Amazon Business Card</a></li>
+                    <li><a>Shop with Points</a></li>
+                    <li><a>Reload Your Balance</a></li>
+                    <li><a>Amazon Currency Converter</a></li>
+                </ul> 
+            </div>
+
+            <div class="footer1-section">
+                <p>Let Us Help You</p>
+                <ul>
+                    <li><a>Amazon and COVID-19</a></li>
+                    <li><a>Your Account</a></li>
+                    <li>Your Orders</li>
+                    <li>Shipping Rates & Policies</li>
+                    <li>Returns & Replacements</li>
+                    <li>Manage Your Content and Devices</li>
+                    <li>Amazon Assistant</li>
+                    <li>Help</li>
+                </ul> 
+            </div>
+        </div>
+        <hr>
+
+        <!-- FOOTER 2... -->
+        <div class="footer2">
+            <img src="images/img/amazon.logo.png">
+
+            <div class="footer2-box">
+                <div class="btn">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <p>English</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+
+                <div class="btn">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>US dollar</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+
+                <div class="btn">
+                    <img src="https://flagsapi.com/US/flat/64.png">
+                    <p>United States</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER 3... -->
+        <div class="footer3">
+            <div class="footer3-section">
+                <a class="footer3-heading">Amazon Music</a>
+                <a>Stream millions</a>
+                <a>of songs</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Amazon ADS</a>
+                <a>Reach customer</a>
+                <a>whenever they</a>
+                <a>spend their time</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Amazon ADS</a>
+                <a>Reach customer</a>
+                <a>whenever they</a>
+                <a>spend their time</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">6 PM</a>
+                <a>Score deals</a>
+                <a>of fashion</a>
+                <a>brands</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">AbeBooks</a>
+                <a>Books, art</a>
+                <a>& collections</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">ACX</a>
+                <a>Audiobook publishing</a>
+                <a>made easy</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Sell on amazon</a>
+                <a>Start a selling</a>
+                <a>account</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Amazon</a>
+                <a class="footer3-heading">Business</a>
+                <a>Everything</a>
+                <a>for</a>
+                <a>your business</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Amazon globle</a>
+                <a>ship orders</a>
+                <a>internationally</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Home service</a>
+                <a>Experienced Pros</a>
+                <a>happiness</a>
+                <a>granted</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Amazon web</a>
+                <a class="footer3-heading">service</a>
+                <a>Scalable cloud</a>
+                <a>computing</a>
+                <a>services</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Audible</a>
+                <a>listen to books</a>
+                <a>original</a>
+                <a>audios</a>
+                <a>performances</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Box office Mojo</a>
+                <a>Find movies</a>
+                <a>box office data</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Goodreads</a>
+                <a>Books reviews</a>
+                <a>&</a>
+                <a>recommendations</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">IMDB</a>
+                <a>Movies, TV</a>
+                <a>& celebrities</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">IMDBpros</a>
+                <a>Get info.</a>
+                <a>entertainment</a>
+                <a>professional</a>
+                <a>need</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Kindle direct</a>
+                <a class="footer3-heading">publishing</a>
+                <a>Indie digital &</a>
+                <a>print publishing</a>
+                <a>made easy</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Prime video</a>
+                <a class="footer3-heading">Direct</a>
+                <a>video</a>
+                <a>distribution</a>
+                <a>made easy</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Shopbop</a>
+                <a>Designer</a>
+                <a>Fashion brands</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Woot!</a>
+                <a>Deals &</a>
+                <a>shenanigans</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Zappos</a>
+                <a>shoes &</a>
+                <a>clothing</a>
+            </div>
+
+            <div class="footer3-section">
+                <a class="footer3-heading">Ring</a>
+                <a>Smarthome</a>
+                <a>security</a>
+                <a>system</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            <div>
+                <p>Amazon clone </p>
+            </div>
+            <div class="credit-name">
+                <p>made by: Divya Bhardwaj</p>
+                <i class="fa-solid fa-shield-cat"></i>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

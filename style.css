@@ -1,0 +1,491 @@
+ *{
+    margin: 0;   padding: 0;   box-sizing: border-box;
+ } 
+ body{
+    background-color: #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+ } 
+ html{
+    font-size: 62.5%;
+ } 
+ /* FOR BOLD...  */
+ .b{
+    font-weight: bold;
+ }
+ a{
+   cursor: pointer;
+ }
+ /* HOVER BORDER... */
+ .border:hover{
+    border: #ffffff 0.08rem solid;
+    border-radius: 0.24rem;
+ }
+
+
+ /* NAVIGATION BAR... */
+ .flex-row{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+ }
+ .navbar{
+    height: 6rem;                     width: 100%;
+    background-color: #131921;      color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .nav-items{
+    height: 4rem;
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .nav-s{
+    font-size: 1.2rem;
+ }
+ .nav-l{
+    font-size: 1.44rem;
+ }
+ /* LOGO.... */
+ .navbar>a>img{
+     width: 10rem;
+     margin-left: 1rem;
+ }
+ /* LOCATION... */
+ .location>p{
+    font-size: 1.36rem;
+    margin-left: 1rem;
+    color: #e6e6e6;
+ }
+ /* SEARCH BOX... */
+ .search-kit{
+    display: flex;
+    gap: 0;
+    align-items: center;
+ }
+ .search-kit>select{
+    height: 4rem;                         width: 5rem;
+    color: #0f1111;                     background-color: #e6e6e6;
+    border: none;
+    text-align: center;
+    border-top-left-radius: 0.48rem;      border-bottom-left-radius: 0.48rem;   
+ }
+ .search-kit>select:hover{
+   border: 0.3rem solid orange;
+ }
+ .search-kit option{
+   text-align: start;
+ }
+ .search-kit>input{
+    height: 4rem;         width: 78rem;
+    border: none;         outline: none;
+    font-size: 1.76rem;
+    padding-left: 1rem;
+ } 
+ .search-kit>button{
+    height: 4rem;     width: 4.5rem;
+    color: black;   background-color: orange;
+    font-size: 2.08rem;
+    border-top-right-radius: 0.48rem;       border-bottom-right-radius: 0.48rem;
+    border: none;
+ }
+ .search-kit>button:hover{
+    background-color: orangered;
+ }
+ /* LANGUAGE... */
+ .language{
+    height: 4rem;
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+ }
+ .language>img{
+    height: 2rem;
+ }
+ .language>i{
+    font-size: 1.04rem;
+    color: gray;
+ }
+ /* SIGN IN ... */
+ .sign-in{
+    height: 4rem;
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items:flex-start;
+ }
+ .sign-in>div{
+    display: flex;    gap: 0.32rem;
+    align-items: center;
+ }
+ .sign-in i{
+    font-size: 1.04rem;
+    color: gray;
+ }
+/* ORDERS... */
+.orders{
+    height: 4rem;
+    padding: 0.3rem 0.3rem;
+    display: flex; 
+    justify-content: space-evenly;     align-items: flex-start;
+}
+/* NAV CART... */
+.nav-cart{
+    height: 4rem;
+    padding: 0.3rem 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.48rem;
+}
+.cart-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     align-items: center;
+}
+.cart-icon>p{
+    color: orange;
+    font-size: 1.04rem;
+}
+.nav-cart>p{
+    margin-top: 0.3rem;
+}
+
+/* NAVIGATION 2... */
+.nav2{
+    height: 4rem;                    width: 100%;
+    background-color:#232f3e ;     color: #FFFFFF;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+}
+.nav2>div{
+    height: 3.5rem;
+    padding: 0rem 0.4rem;
+    display: flex;
+    justify-content: center;     align-items: center;
+    gap: 0.3rem;
+}
+.menu{
+    margin-left: 1rem;
+    
+}
+
+/* HERO SECTION... */
+.bg{
+    height: 60rem;       width: 100%;
+    background-image: url(images/img/bg1.jpg);     background-size: cover;
+    mask-image: linear-gradient(to bottom, #000000 80%, transparent 150%);
+    position: relative;
+    z-index: -1;
+}
+
+.previous{
+    height: 25rem;         width: 8rem;
+    font-size: 3rem;       color: #232f3e;
+    position: absolute;
+    top: 10rem;            left: 0rem;
+    background-color: transparent;  
+    border: none;
+}
+.next{
+    height: 25rem;         width: 8rem;
+    font-size: 3rem;       color: #232f3e;
+    position: absolute;
+    top: 10rem;            right: 0rem;
+    background-color: transparent; 
+    border: none; 
+}
+.welcome{
+   height: 3.6rem;       width: 96%;
+   display: flex;      
+   margin-top: -48.5vh;             margin-left: 3.2rem;
+   justify-content: center;       align-items: center ;
+   background-color: #f5f6f6;   font-size: 1.4rem;
+}
+
+/* PRODUCTS */
+.box-product{
+   width: 96%;
+   margin-left: 3.2rem;         margin-top: 2.4rem;
+   background-color: transparent;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   column-gap: 2.75rem;
+   row-gap: 2rem;
+}
+.product-box{
+   height: 42rem;               width: 34.4rem;
+   padding: 2rem 2rem;
+   background-color: #ffffff;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;     align-items: flex-start;
+}
+.product-box a{
+   font-size: 1.3rem;
+   color:#007185;
+}
+
+.product-box a:hover{
+   color: orangered;
+   text-decoration: underline;
+   cursor: pointer;
+}
+/* PRODUCT BOXES... */
+/* BOX WITH 4 PRODUCTS... */
+.product-grid{
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 3rem;
+}
+.box4>div>p{
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+.product4>img{
+   width: 15rem;   height: 10rem;
+}
+.product4>span{
+   font-size: 1.2rem;
+}
+
+/* BOX WITH 1 PRODUCT... */
+.box1>p{
+   font-size: 2.5rem;
+   font-weight: bold;
+}
+.box1>img{
+   width: 29.6rem;    height: 30rem;  
+}
+/* PRODUCT SLIDER... */
+.slider-box{
+   height: 30rem;                   width: 96%;
+   margin: 2rem 3.2rem;             padding: 2rem 2rem;
+   background-color:#FFFFFF;
+   display: flex;
+   flex-direction: column;          justify-content: space-evenly;
+}
+.product-list{
+   height: 20.5rem;        
+   
+   display: grid;
+   grid-template-columns: repeat(22, 1fr);      column-gap: 2rem;
+   overflow-x: auto;
+   scrollbar-width: none;
+}
+.product-list img{
+   height: inherit;
+}
+.slider-box>p{
+   font-size: 2rem;
+   font-weight: bold;
+}
+.slider{
+   position: relative;
+}
+/* BUTTONS TO SLIDE... */
+.slider>.slider-prev{
+   height: 10rem;             width: 5rem;
+   border: none;              border-radius: 0.4rem;
+   font-size: 3rem;           background-color: #e6e6e6;
+   position: absolute;
+   top: 5rem;                left: 0rem;
+}
+.slider>.slider-next{
+   height: 10rem;             width: 5rem;
+   border: none;              border-radius: 0.4rem;
+   font-size: 3rem;           background-color: #e6e6e6;
+   position: absolute;
+   top: 5rem;                right: 0rem;
+}
+/* SCROLL BAR.... */
+.scrollbar{
+   height: 1.2rem; 
+   display: flex;      align-items: center;
+   background-color: white;
+}
+
+.scrollbar>.thumb{
+   height: 0.7rem;          width: 30%;
+   background-color: gray;   
+   border-radius: 1rem; 
+   position: absolute;               
+}
+
+/* SINGLE PRODUCT ROW... */
+.single-row{
+   width: 96%;
+   margin-left: 3.2rem;
+   display: flex;
+   gap: 2.75rem;
+}
+hr{
+   margin-top: 6rem;
+}
+
+/* LOGIN BUTTON BEFORE FOOTER... */
+.login{
+   margin: 5rem 3.2rem;
+   display: flex;                 flex-direction: column;
+   justify-content: center;       align-items: center;
+   gap: 0.8rem;
+}
+.login>p{
+   font-size: 1.1rem;         color: #000000;
+}
+.login>button{
+   height: 2.8rem;        width: 23rem;
+   font-size: 1.2rem;     text-shadow: 0rem 0.2rem 0rem #FFE093;
+   color: #000000;      background-color: orange;
+   border: none;          border-radius: 0.5rem;
+}
+.login>button:hover{
+   border: #000000 0.15rem solid;
+}
+.login>.xs-font{
+   font-size: 1.1rem;     color: #000000;
+}
+.login a{
+   font-size: 1.1rem;    color: #007185;
+}
+
+/* FOOTER... */
+.back-to-top{
+   height: 6rem;
+   font-size: 1.3rem;
+   display: flex;
+   justify-content: center;        align-items: center;
+   background-color: #37475A;    color: #FFFFFF;
+}
+/* FOOTER 1... */
+.footer1{
+    padding: 6rem 20rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6rem;
+    background-color:#232f3e;
+}
+.footer1-section{
+   height: 28rem;
+   padding-left: 1rem;
+   display: flex;                    flex-direction: column;
+   justify-content: flex-start;      align-items: flex-start;
+   gap: 1rem;
+}
+.footer1-section>p{
+   font-size: 1.6rem;         color: #FFFFFF;
+   font-weight: bold;         cursor: pointer;
+}
+.footer1-section>p:hover{
+   text-decoration: underline solid;
+}
+.footer1-section>ul{
+   display: flex;                    flex-direction: column;
+   justify-content: flex-start;      align-items: flex-start;
+   gap: 1rem;
+}
+.footer1-section>ul li{
+   font-size: 1.4rem;         color: #DDDDDD;
+   list-style-type: none;     cursor: pointer;
+}
+.footer1-section li:hover{
+   text-decoration: underline #DDDDDD;
+}
+footer hr{
+    
+   margin: 0;
+}
+/* FOOTER 2... */
+.footer2{
+   height: 10rem;
+   background-color: #232f3e;
+   display: flex;
+   justify-content: center;
+   gap: 13rem;
+}
+.footer2>img{
+   height: 2.5rem;
+  margin-top: 4.5rem;
+}
+.footer2-box{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   gap: 2rem;
+}
+.footer2 .btn{
+   height: 3rem;                         width:15rem ;
+   padding-left: 0.5rem;
+   font-size: 1.3rem;
+   border: 0.1rem solid #CCCCCC;       border-radius: 0.35rem;
+   display: flex;
+   justify-content: flex-start;          align-items: center;
+   gap: 0.5rem;
+}
+.footer2 .btn>i{
+   color: #FFFFFF;
+}
+.footer2 .btn>p{
+   color: #CCCCCC;
+}
+.footer2 .btn>img{
+   height: 1.5rem;
+}
+
+/*FOOTER 3... */
+.footer3{
+   height: 40rem;
+   padding: 4rem 20rem;
+   background-color: #131921; 
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+
+}
+.footer3-section{
+   display: flex;                   flex-direction: column;
+   justify-content: flex-start;     align-items: flex-start;
+   font-size: 1.2rem;
+}
+.footer3 a{
+   color: #999999;
+}
+.footer3-section .footer3-heading{
+   color: #DDDDDD;      
+   font-weight: bold;
+}
+/* CREDIT.... */
+.credit{
+   padding: 2rem 0rem;
+   display: flex;                    flex-direction: column;
+   justify-content: center;          align-items: center;
+   gap: 0.3rem;
+   background-color: #131921;      color: #DDDDDD;
+   font-size: 1.1rem;
+   font-weight: bold;
+}
+.credit-name{
+   display: flex;                 flex-direction: row;
+   justify-content: center;       align-items: center;
+   gap: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
